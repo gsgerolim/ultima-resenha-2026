@@ -1,0 +1,14 @@
+# Ferramentas administrativas
+administrativo/
+
+# Arquivos administrativos locais
+*.xlsx
+*.xls
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

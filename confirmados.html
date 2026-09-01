@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultar Pagamento | Última Resenha – 2026</title>
+
+    <meta
+        name="description"
+        content="Consulte a situação do seu pagamento para a viagem Última Resenha – 2026."
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                Última Resenha – 2026
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="menuPrincipal"
+            >
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacoes.html">
+                            Informações
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagamento.html">
+                            Pagamento
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="confirmados.html">
+                            Confirmados
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8 text-center">
+
+                    <span class="badge text-bg-primary mb-3">
+                        STATUS DA VIAGEM
+                    </span>
+
+                    <h1 class="display-5 fw-bold">
+                        Consulte seu pagamento
+                    </h1>
+
+                    <p class="lead text-muted">
+                        Informe seu CPF para verificar se o pagamento
+                        da viagem já foi confirmado.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONSULTA -->
+
+    <main class="py-5">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-8 col-lg-6">
+
+                    <div class="card border-0 shadow-sm">
+
+                        <div class="card-body p-4 p-md-5">
+
+                            <div class="text-center mb-4">
+
+                                <div class="consulta-icon mb-3">
+                                    <i class="bi bi-person-check"></i>
+                                </div>
+
+                                <h2 class="h4 fw-bold">
+                                    Consulta individual
+                                </h2>
+
+                                <p class="text-muted mb-0">
+                                    O resultado será exibido somente para
+                                    o CPF informado.
+                                </p>
+
+                            </div>
+
+
+                            <form id="consultaForm">
+
+                                <div class="mb-4">
+
+                                    <label
+                                        for="cpf"
+                                        class="form-label fw-semibold"
+                                    >
+                                        CPF
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control form-control-lg"
+                                        id="cpf"
+                                        placeholder="000.000.000-00"
+                                        maxlength="14"
+                                        inputmode="numeric"
+                                        autocomplete="off"
+                                        required
+                                    >
+
+                                    <div class="form-text">
+                                        Digite somente o CPF utilizado
+                                        na inscrição da viagem.
+                                    </div>
+
+                                </div>
+
+
+                                <button
+                                    type="submit"
+                                    id="btnConsultar"
+                                    class="btn btn-primary btn-lg w-100"
+                                >
+                                    <i class="bi bi-search me-2"></i>
+                                    Consultar pagamento
+                                </button>
+
+                            </form>
+
+
+                            <!-- RESULTADO -->
+
+                            <div
+                                id="resultado"
+                                class="mt-4"
+                                aria-live="polite"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INFORMAÇÃO -->
+
+                    <div class="alert alert-info mt-4">
+
+                        <div class="d-flex">
+
+                            <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+
+                            <div>
+
+                                <strong>Importante</strong>
+
+                                <p class="mb-0 mt-1">
+                                    A situação apresentada nesta página
+                                    depende da conferência dos pagamentos
+                                    e pode levar algum tempo para ser
+                                    atualizada após o envio do comprovante.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="text-center mt-4">
+
+                        <a
+                            href="pagamento.html"
+                            class="btn btn-outline-primary me-2"
+                        >
+                            <i class="bi bi-credit-card me-1"></i>
+                            Ver pagamento
+                        </a>
+
+                        <a
+                            href="index.html"
+                            class="btn btn-outline-secondary"
+                        >
+                            <i class="bi bi-house me-1"></i>
+                            Início
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+
+        <div class="container text-center">
+
+            <div class="fw-bold">
+                Última Resenha – 2026
+            </div>
+
+            <small class="text-white-50">
+                Viagem de formatura • Thermas dos Laranjais • Olímpia/SP
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/confirmados.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
