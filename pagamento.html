@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pagamento | Última Resenha 2026</title>
+
+    <meta name="description" content="Página de pagamento da viagem Última Resenha 2026.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-stars"></i> Última Resenha
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="informacoes.html">Informações</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="pagamento.html">Pagamento</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<header class="page-header payment-header">
+
+    <div class="container text-center">
+
+        <span class="badge-evento">
+            PAGAMENTO
+        </span>
+
+        <h1>
+            Agora é só acertar a conta.
+        </h1>
+
+        <p>
+            Escolha a forma de pagamento e envie seu comprovante.
+        </p>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="section-padding">
+
+<div class="container">
+
+
+    <!-- VALOR -->
+
+    <div class="payment-total">
+
+        <span>VALOR PIX DA VIAGEM</span>
+
+        <div>
+            R$ <strong>210</strong><small>,00</small>
+        </div>
+
+        <p>
+            Transporte + ingresso do Thermas dos Laranjais
+        </p>
+
+    </div>
+
+
+    <div class="row g-5 mt-2">
+
+
+        <!-- PIX -->
+
+        <div class="col-lg-6">
+
+            <div class="pix-card">
+
+                <div class="pix-title">
+
+                    <div class="pix-logo">
+                        <i class="bi bi-qr-code"></i>
+                    </div>
+
+                    <div>
+                        <span>PAGAMENTO PIX</span>
+                        <h2>R$ 210,00</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="qr-container">
+
+                    <div id="qrcode"></div>
+
+                    <p>
+                        Aponte a câmera do seu banco para o QR Code.
+                    </p>
+
+                </div>
+
+
+                <div class="pix-data">
+
+                    <div>
+
+                        <span>Titular</span>
+
+                        <strong>
+                            Gabriel de Souza Gerolim
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Instituição</span>
+
+                        <strong>
+                            InfinityPay
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Chave PIX</span>
+
+                        <div class="pix-key">
+
+                            <code id="pixKey">
+                                1bf0bdeb-ec7a-4fd0-b408-481eacca6384
+                            </code>
+
+                            <button onclick="copyPixKey()" class="copy-btn">
+
+                                <i class="bi bi-copy"></i>
+
+                                Copiar
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="copyMessage" class="copy-message">
+                    Chave PIX copiada.
+                </div>
+
+
+                <div class="pix-alert">
+
+                    <i class="bi bi-info-circle-fill"></i>
+
+                    <div>
+
+                        <strong>PIX com valor definido</strong>
+
+                        <p>
+                            O QR Code desta página já está configurado para o valor de R$ 210,00.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARTÃO + OPÇÕES -->
+
+        <div class="col-lg-6">
+
+            <div class="payment-options-card">
+
+                <span class="section-label">
+                    OUTRAS FORMAS
+                </span>
+
+                <h2>
+                    Pagamento por cartão
+                </h2>
+
+                <p class="text-muted">
+                    O pagamento por cartão é realizado pela InfinityPay.
+                </p>
+
+
+                <div class="credit-option">
+
+                    <div>
+
+                        <span>À VISTA</span>
+
+                        <strong>R$ 223,38</strong>
+
+                    </div>
+
+                    <i class="bi bi-credit-card"></i>
+
+                </div>
+
+
+                <div class="credit-option">
+
+                    <div>
+
+                        <span>ATÉ 4X</span>
+
+                        <strong>4 × R$ 60,41</strong>
+
+                        <small>Total: R$ 241,63</small>
+
+                    </div>
+
+                    <i class="bi bi-credit-card-2-front"></i>
+
+                </div>
+
+
+                <a href="https://link.infinitepay.io/gsgerolim/VC1D-2CtHocVqwg-210,00"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn-card-payment">
+
+                    <i class="bi bi-credit-card-fill"></i>
+
+                    Pagar com cartão
+
+                    <i class="bi bi-arrow-up-right ms-auto"></i>
+
+                </a>
+
+
+                <div class="payment-warning">
+
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+
+                    <p>
+                        Os valores de cartão já consideram os encargos da operadora.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIX PARCELADO -->
+
+    <div class="content-box mt-5">
+
+        <div class="content-heading">
+
+            <div class="content-icon green">
+                <i class="bi bi-calendar2-week-fill"></i>
+            </div>
+
+            <div>
+
+                <h2>PIX parcelado</h2>
+
+                <p>
+                    Prefere dividir o pagamento?
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row align-items-center">
+
+            <div class="col-md-7">
+
+                <p class="lead">
+
+                    Você pode realizar o pagamento via PIX em até
+
+                    <strong>4 parcelas de R$ 52,50</strong>.
+
+                </p>
+
+                <p class="text-muted">
+
+                    O valor total da viagem deverá estar integralmente quitado até
+
+                    <strong>30/11/2026</strong>.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-md-5">
+
+                <div class="installment-highlight">
+
+                    <span>4 PARCELAS</span>
+
+                    <strong>R$ 52,50</strong>
+
+                    <small>Total: R$ 210,00</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMPROVANTE -->
+
+    <div class="receipt-card mt-5">
+
+        <div class="receipt-icon">
+
+            <i class="bi bi-receipt-cutoff"></i>
+
+        </div>
+
+        <div>
+
+            <span>ÚLTIMO PASSO</span>
+
+            <h2>Pagou? Envie o comprovante.</h2>
+
+            <p>
+
+                Depois de realizar o pagamento, preencha o formulário para enviar seu comprovante.
+
+                Isso ajuda na identificação e no controle dos pagamentos da viagem.
+
+            </p>
+
+
+            <a href="https://forms.gle/ba2Y2VaYJnjT6P5j7"
+               target="_blank"
+               rel="noopener"
+               class="btn-main">
+
+                <i class="bi bi-upload"></i>
+
+                Enviar comprovante
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRAZO -->
+
+    <div class="deadline large-deadline mt-5">
+
+        <i class="bi bi-calendar-check-fill"></i>
+
+        <div>
+
+            <span>PRAZO FINAL</span>
+
+            <strong>30/11/2026</strong>
+
+            <p>
+                Todo o valor da viagem deverá estar quitado até esta data.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FLUXO -->
+
+    <div class="section-title text-center mt-5">
+
+        <span>É SIMPLES</span>
+
+        <h2>
+            Pagamento em 3 passos.
+        </h2>
+
+    </div>
+
+
+    <div class="row g-4 mt-3">
+
+        <div class="col-md-4">
+
+            <div class="step-card">
+
+                <div>01</div>
+
+                <i class="bi bi-qr-code"></i>
+
+                <h3>Pague</h3>
+
+                <p>
+                    Faça o PIX ou utilize o cartão.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="step-card">
+
+                <div>02</div>
+
+                <i class="bi bi-camera"></i>
+
+                <h3>Comprovante</h3>
+
+                <p>
+                    Tenha o comprovante do pagamento em mãos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="step-card">
+
+                <div>03</div>
+
+                <i class="bi bi-upload"></i>
+
+                <h3>Envie</h3>
+
+                <p>
+                    Envie pelo formulário de comprovante.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<section class="whatsapp-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <i class="bi bi-whatsapp whatsapp-big"></i>
+
+                <h2>
+                    Ficou alguma dúvida?
+                </h2>
+
+                <p>
+                    Entre no grupo oficial da viagem para acompanhar os avisos.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+
+                <a href="https://chat.whatsapp.com/J2gCegB93cc2gKZaaSrZ1U"
+                   target="_blank"
+                   rel="noopener"
+                   class="btn-whatsapp">
+
+                    <i class="bi bi-whatsapp"></i>
+                    Grupo oficial
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container text-center">
+
+        <strong>Última Resenha – 2026</strong>
+
+        <p>
+            Viagem de Formatura • Etec de Ilha Solteira
+        </p>
+
+        <small>
+            Thermas dos Laranjais • Olímpia/SP • 05/12/2026
+        </small>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Biblioteca para geração do QR Code -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const pixPayload =
+        "00020101021226810014BR.GOV.BCB.PIX01361bf0bdeb-ec7a-4fd0-b408-481eacca63840219Pagamento gsgerolim5204000053039865406210.005802BR5924GABRIEL DE SOUZA GEROLIM6013ILHA SOLTEIRA62290525QRCCx64br6l8zGlwGw1eXuYr16304D4EA";
+
+    if (document.getElementById("qrcode")) {
+
+        new QRCode(document.getElementById("qrcode"), {
+
+            text: pixPayload,
+
+            width: 230,
+
+            height: 230,
+
+            correctLevel: QRCode.CorrectLevel.M
+
+        });
+
+    }
+
+});
+
+
+function copyPixKey() {
+
+    const key = "1bf0bdeb-ec7a-4fd0-b408-481eacca6384";
+
+    navigator.clipboard.writeText(key).then(function () {
+
+        const message = document.getElementById("copyMessage");
+
+        message.classList.add("show");
+
+        setTimeout(function () {
+
+            message.classList.remove("show");
+
+        }, 2500);
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
