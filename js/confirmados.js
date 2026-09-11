@@ -185,6 +185,13 @@ function normalizarStatus(status) {
     }
 
     if (
+        status === "parcial'" ||
+        status === "aguardando"
+    ) {
+        return "parcial";
+    }
+
+    if (
         status === "analise" ||
         status === "em analise"
     ) {
@@ -380,6 +387,28 @@ form.addEventListener("submit", async function (event) {
                 "warning",
                 "bi-hourglass-split",
                 "Pagamento pendente",
+                "Seu pagamento ainda não foi confirmado pela organização.",
+                registro.atualizadoEm
+            );
+
+            return;
+
+        }
+
+        //PARCIAL
+        if (status === "parcial") {
+
+            exibirResultado(
+                "warning",
+                "bi-hourglass-split",
+                "Pagamento parcial",
+                "Seu pagamento  parcialmente está confirmado pela organização.",
+                registro.atualizadoEm
+            );
+
+            return;
+
+        }
                 "Seu pagamento ainda não foi confirmado pela organização.",
                 registro.atualizadoEm
             );
