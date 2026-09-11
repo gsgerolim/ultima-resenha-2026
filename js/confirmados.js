@@ -185,7 +185,7 @@ function normalizarStatus(status) {
     }
 
     if (
-        status === "parcial'" ||
+        status === "parcial" ||
         status === "aguardando"
     ) {
         return "parcial";
@@ -395,21 +395,13 @@ form.addEventListener("submit", async function (event) {
 
         }
 
-        //PARCIAL
         if (status === "parcial") {
 
             exibirResultado(
                 "warning",
                 "bi-hourglass-split",
                 "Pagamento parcial",
-                "Seu pagamento  parcialmente está confirmado pela organização.",
-                registro.atualizadoEm
-            );
-
-            return;
-
-        }
-                "Seu pagamento ainda não foi confirmado pela organização.",
+                "Seu pagamento parcial foi confirmado pela organização.",
                 registro.atualizadoEm
             );
 
